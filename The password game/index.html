@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <title>The password game</title>
+    <link rel ="stylesheet" href = "style.css" />
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>The password game</h1>
+            <p class ="subtitle">Выполняй правила по одному. Нарушишь - дальше не пойдешь</p>
+        </header>
+
+        <section class="input-wrap">
+            <input id="password" type="text" autocomplete="off" placeholder="Пожалуйста введите пароль..." />
+            <div id="progress" class="progress">
+                <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+            </div>
+            <div id="progress-text" class="progress-text">0 / 10 правил выполнено</div>
+        </section>
+        
+        <section class="rules-wrap">
+            <h2>Правила</h2>
+            <ul id="rules" class="rules-list"></ul>
+        </section>
+
+        <footer class="footer">
+            <p>Проект для обучения и развлечения. Ничего никуда не отправляется</p>
+        </footer>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
